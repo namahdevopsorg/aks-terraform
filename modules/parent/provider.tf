@@ -1,6 +1,6 @@
 terraform {
     backend "azurerm" {
-    resource_group_name   = "swapnil"
+    resource_group_name   = "swapnil-rg"
     storage_account_name  = "swapnilbackend"         # Must be globally unique
     container_name        = "swapnilcontainer"
     key                   = "terraform.tfstate"
