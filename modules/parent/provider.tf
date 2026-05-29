@@ -1,4 +1,10 @@
 terraform {
+    backend "azurerm" {
+    resource_group_name   = "aarambh"
+    storage_account_name  = "aarmabhstr"         # Must be globally unique
+    container_name        = "tfstatefile"
+    key                   = "terraform.tfstate"
+  }
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
